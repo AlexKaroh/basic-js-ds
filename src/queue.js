@@ -28,14 +28,6 @@ class Queue {
     this.tail = null;
   }
 
-  getUnderlyingList() {
-    let current = this.head;
-
-    while(current) {
-      current = current.next;
-    }
-  }
-
   enqueue(value) {
     const node = new Node(value);
 
